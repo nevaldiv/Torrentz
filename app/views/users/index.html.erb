@@ -1,0 +1,16 @@
+<h4> Torrents power Users!</h4>
+
+<% @users.each do |user| %>
+
+<ul>
+  <li> <%= user.username %> - <%= link_to "more info", user %>
+</li>
+</ul>
+<p>
+ <!--  method: :delete, data: { confirm: "Are you sure?"} %>
+-->
+</p>
+
+<% end %>
+
+
