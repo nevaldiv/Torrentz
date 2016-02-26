@@ -56,4 +56,5 @@ Story boards and trello correspond to an older, original intention behind this p
 
 ![hi mom](https://i.imgur.com/k6cV3qg.png)
 
-Trello:
+Trello link: https://trello.com/b/obtdqzRl/lmft-app
+(will create one for new project soon)
