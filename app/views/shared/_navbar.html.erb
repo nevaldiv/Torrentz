@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
       </button>
       <%= link_to root_path, class: "navbar-brand" do %>
-        A Random Blog
+        A Lonely Place
       <% end %>
     </div>
 
@@ -18,10 +18,10 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
       <% if current_user %>
-          <li><%= link_to "Account", root_path %></li>
+          <li><%= link_to "Account", user_path(current_user) %></li>
           <li><%= link_to 'Logout', session_path(current_user), method: :delete %></li>
       <% else %>
-          <li><%= link_to 'Sign Up', users_path %></li>
+          <li><%= link_to 'Sign Up', new_user_path %></li>
           <li><%= link_to 'Login', login_path %></li>
         <% end %>
       </ul>
