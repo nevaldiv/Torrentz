@@ -4,38 +4,37 @@ class PostsController < ApplicationController
     @posts = Post.all
   end
 
-#   def new
-#   end
+  def new
+    @post = Post.new
+  end
 
-#   def show
-#     @post = Post.find(params[:id])
-#   end
+  # def show
+  #   @post = Post.find(params[:id])
+  # end
 
-#   def create
-#     @post = Post.new(post_params)
+  def create
+    @post = Post.new(post_params)
 
-#     @post.save
-#     redirect_to @post
-# #if time have it redirect back on fail
+    if @post.save
+    redirect_to posts_path
+    else
+      render :new
+    end
+  end
 
-#   end
+  def edit
+  end
 
-#   def edit
+  def update
+  end
 
-#   end
+  def destroy
+  end
 
-#   def update
-
-#   end
-
-#   def destroy
-
-#   end
-
-# private
-#   def post_params
-#     params.require(:post).permit(:title, :body)
-#   end
+private
+  def post_params
+    params.require(:post).permit(:title, :body)
+  end
 end
 
 
