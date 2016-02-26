@@ -56,5 +56,11 @@ Story boards and trello correspond to an older, original intention behind this p
 
 ![hi mom](https://i.imgur.com/k6cV3qg.png)
 
+starting around 5:00 A.M. I found my theme :].
+As which seems to be a running theme with me, I went minimalist (intended but not really intended, more like it was the only way to save it.)
+![sorry mom](https://i.imgur.com/eUi6Cyw.png)
+
 Trello link: https://trello.com/b/obtdqzRl/lmft-app
 (will create one for new project soon)
+
+

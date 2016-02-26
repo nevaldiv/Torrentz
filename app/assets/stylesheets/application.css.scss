@@ -18,6 +18,14 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
+
+#bodeh {
+  background-image: url("http://i.imgur.com/R4PV2Tw.jpg");
+  background-attachment: fixed, scroll;
+  background-repeat: no-repeat, repeat-y;
+  background-position: center;
+}
+
  #container {
     text-align: center;
  }
@@ -32,5 +40,19 @@
   bottom: 900px;
   background-color: white;
   opacity: 0.8;
-  background-image: url('http://i.imgur.com/R4PV2Tw.jpg');
+}
+
+#frontpagepost {
+  max-width: 300px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 25px 25px;
+}
+
+#blogtitle {
+ text-align: left;
+}
+
+#subtitle {
+  text-align: left;
 }

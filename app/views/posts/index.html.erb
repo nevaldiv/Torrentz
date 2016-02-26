@@ -6,8 +6,8 @@
   <article>
   <% @posts.each do |post| %>
     <div id="frontpagepost">
-      <h4><%= post.title %></h4>
-       <h5><%= post.subtitle %></h5>
+      <h4 id="blogtitle"><%= post.title %></h4>
+       <h5 id="subtitle"><%= post.subtitle %></h5>
        <p><%= post.body %></p>
         <span><%= link_to "Edit", edit_post_path(post) %></span> |
         <span><%= link_to "Remove", post_path(post.id), method: "DELETE" %></span>
