@@ -3,7 +3,15 @@
   <h3>gogogo!</h3>
 </header>
 <main>
-  <article>
     posts should go here....
+    <hr>
+  <article>
+  <% @posts.each do |post| %>
+    <div id="frontpage">
+      <h4><%= post.title %></h4>
+       <h5><%= post.subtitle %></h5>
+    </div>
+    <hr>
+  <% end %>
   </article>
 </main>
