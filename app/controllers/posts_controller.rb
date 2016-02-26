@@ -1,5 +1,9 @@
 class PostsController < ApplicationController
 
+before_action :authenticate, except: [:index]
+
+
+
   def index
     @posts = Post.all
   end
@@ -46,6 +50,14 @@ class PostsController < ApplicationController
 
   def post_params
     params.require(:post).permit(:title, :subtitle, :body)
+  end
+
+  def authenticate
+    unless logged_in?
+      flash[:message] =
+        "You must be logged in to access this section of the site."
+      redirect_to login_path
+    end
   end
 end
 
