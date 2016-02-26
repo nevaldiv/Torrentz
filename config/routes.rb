@@ -1,9 +1,14 @@
 Rails.application.routes.draw do
 
+  get 'index/show'
+
+  get 'index/destroy'
+
   root "users#index"
   resources :users
-  #resources :users, only: [:new, :create]
+  resources :posts
 
+  #resources :users, only: [:new, :create]
 
   # Create a better looking URL for logging in
   resources :sessions, only: [:new, :create, :destroy]
