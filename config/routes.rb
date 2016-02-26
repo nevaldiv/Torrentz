@@ -2,11 +2,11 @@ Rails.application.routes.draw do
 
   # get 'index/show'
   # get 'index/destroy'
-  # root "users#index"
+  root "users#index"
   # resources :posts
  resources :users
 
-  get "/posts" => "posts#index"
+  # get "/posts" => "posts#index"
 
   #resources :users, only: [:new, :create]
 
