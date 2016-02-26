@@ -9,8 +9,10 @@
       <h4 id="blogtitle"><%= post.title %></h4>
        <h5 id="subtitle"><%= post.subtitle %></h5>
        <p><%= post.body %></p>
-        <span><%= link_to "Edit", edit_post_path(post) %></span> |
-        <span><%= link_to "Remove", post_path(post.id), method: "DELETE" %></span>
+       <div id="editandremove">
+          <span><%= link_to "Edit", edit_post_path(post) %></span> |
+          <span><%= link_to "Remove", post_path(post.id), method: "DELETE" %></span>
+        </div>
     </div>
     <hr>
   <% end %>
