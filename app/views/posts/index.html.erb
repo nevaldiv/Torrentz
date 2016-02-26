@@ -1,21 +1,15 @@
 <header>
 
-  <h1>Oh, hello, how are you?</h1>
-  <h3>im not sure what this site is yet.. and its 3AM!</h3>
 </header>
 <main>
-    posts should go here....
-  <hr>
-
-
     <hr>
   <article>
   <% @posts.each do |post| %>
-    <div id="frontpage">
+    <div id="frontpagepost">
       <h4><%= post.title %></h4>
        <h5><%= post.subtitle %></h5>
        <p><%= post.body %></p>
-        <span><%= link_to "Edit", edit_post_path(post) %></span>
+        <span><%= link_to "Edit", edit_post_path(post) %></span> |
         <span><%= link_to "Remove", post_path(post.id), method: "DELETE" %></span>
     </div>
     <hr>

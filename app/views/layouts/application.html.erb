@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Torrentz</title>
+  <title>Mr. Wyndmere ND</title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
@@ -20,6 +20,14 @@
         </div>
       </div>
     <% end %>
+
+      <div class="jumbotron">
+        <h1>Oh hello, wont you stay?</h1>
+        <p class="lead">Stories from the other side of the woods...</p>
+        <%= link_to "New Post", new_post_path, class: "btn btn-lg btn-success" %>
+      </div>
+
+
   </nav>
 <div id="container">
 <%= yield %>
