@@ -1,15 +1,24 @@
 <header>
+  <div class="right">
+    <%= link_to "New Thread", new_post_path, class: "btn btn-success" %>
+  </div>
   <h1>This is a blog</h1>
   <h3>gogogo!</h3>
 </header>
 <main>
     posts should go here....
+  <hr>
+
+
     <hr>
   <article>
   <% @posts.each do |post| %>
     <div id="frontpage">
       <h4><%= post.title %></h4>
        <h5><%= post.subtitle %></h5>
+       <p><%= post.body %></p>
+        <span><%= link_to "Edit", edit_post_path(post) %></span>
+        <span><%= link_to "Remove", post_path(post.id), method: "DELETE" %></span>
     </div>
     <hr>
   <% end %>

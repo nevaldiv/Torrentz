@@ -1,0 +1,31 @@
+<%= form_for @post do |f| %>
+  <div class="field">
+    <%= f.label :title, "YouTube Id" %><br>
+    <%= f.text_field :title %>
+  </div>
+  <br>
+  <div class="field">
+    <%= f.label :subtitle %><br>
+    <%= f.text_field :subtitle %>
+  </div>
+  <br>
+  <div class="field">
+    <%= f.label :body %><br>
+    <%= f.text_field :body %>
+  </div>
+  <br>
+  <div class="actions">
+    <%= f.submit "Create!" %>
+  </div>
+<% end %>
+
+<% if @post.errors.any? %>
+  <div id="error_explanation">
+  <p><strong>Errors found:</strong></p>
+    <ul>
+      <% @post.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
