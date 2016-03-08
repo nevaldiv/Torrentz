@@ -39,6 +39,7 @@ before_action :authenticate, except: [:index]
     end
   end
 
+# Below is the delete function for the blog posts
   def destroy
     @post = Post.find(params[:id])
     @post.destroy

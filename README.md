@@ -9,9 +9,10 @@ Mr Wyndham, ND. is like the answer to Mr Worldwide.  At least it would be, if th
 
 
 
+-- 
 ###Inspiration
 --
-I got a little too overambitious with my concept for a project and was relying on a few technologies that in the end ended up being both not the intention of the project as well as stuck in develoment hell -- **bugs**.
+I may have gotten a little too overambitious with my concept for a project (again), and may have been using some gems/technologies that were not permitted in the instructions (which I did not read as carefully as I should have..) In the end ended up being both not the intention of the project as well as stuck in develoment hell -- **bugs**.
 
 So in the nature of getting a working CRUD app up and working, Mr Wyndham was born, what better way to showcase the power of rails than to pump something out quickly.
 
